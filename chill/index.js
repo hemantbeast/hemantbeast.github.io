@@ -5,14 +5,14 @@ var scene,
     camera,
     controls,
     fieldOfView,
-  	aspectRatio,
-  	nearPlane,
-  	farPlane,
+    aspectRatio,
+    nearPlane,
+    farPlane,
     shadowLight,
     backLight,
     light,
     renderer,
-		container;
+    container;
 
 //SCENE
 var floor, lion, fan,
@@ -21,9 +21,9 @@ var floor, lion, fan,
 //SCREEN VARIABLES
 
 var HEIGHT,
-  	WIDTH,
+    WIDTH,
     windowHalfX,
-  	windowHalfY,
+    windowHalfY,
     mousePos = {x:0,y:0};
     dist = 0;
 
@@ -38,10 +38,10 @@ function init(){
   nearPlane = 1;
   farPlane = 2000;
   camera = new THREE.PerspectiveCamera(
-    fieldOfView,
-    aspectRatio,
-    nearPlane,
-    farPlane);
+  fieldOfView,
+  aspectRatio,
+  nearPlane,
+  farPlane);
   camera.position.z = 800;
   camera.position.y = 0;
   camera.lookAt(new THREE.Vector3(0,0,0));
@@ -57,8 +57,8 @@ function init(){
   document.addEventListener('mousedown', handleMouseDown, false);
   document.addEventListener('mouseup', handleMouseUp, false);
   document.addEventListener('touchstart', handleTouchStart, false);
-	document.addEventListener('touchend', handleTouchEnd, false);
-	document.addEventListener('touchmove',handleTouchMove, false);
+  document.addEventListener('touchend', handleTouchEnd, false);
+  document.addEventListener('touchmove',handleTouchMove, false);
   /*
   controls = new THREE.OrbitControls( camera, renderer.domElement);
   //*/
@@ -88,7 +88,7 @@ function handleMouseUp(event) {
 function handleTouchStart(event) {
   if (event.touches.length > 1) {
     event.preventDefault();
-		mousePos = {x:event.touches[0].pageX, y:event.touches[0].pageY};
+    mousePos = {x:event.touches[0].pageX, y:event.touches[0].pageY};
     isBlowing = true;
   }
 }
@@ -101,7 +101,7 @@ function handleTouchEnd(event) {
 function handleTouchMove(event) {
   if (event.touches.length == 1) {
     event.preventDefault();
-		mousePos = {x:event.touches[0].pageX, y:event.touches[0].pageY};
+    mousePos = {x:event.touches[0].pageX, y:event.touches[0].pageY};
   }
 }
 
@@ -563,7 +563,6 @@ Lion.prototype.look = function(xTarget, yTarget){
   this.tHeadPosY = rule3(yTarget, -140, 260, 20, 100);
   this.tHeadPosZ = 0;
 
-
   this.tEyeScale = 1;
   this.tIrisYScale = 1;
   this.tIrisZScale = 1;
@@ -583,7 +582,6 @@ Lion.prototype.look = function(xTarget, yTarget){
   this.tRightKneeRotZ = rule3(xTarget, -200, 200, .3-Math.PI/8, .3+Math.PI/8);
   this.tLeftKneeRotZ = rule3(xTarget, -200, 200, -.3-Math.PI/8, -.3+Math.PI/8)
 
-
   this.updateBody(10);
 
   this.mane.rotation.y = 0;
@@ -599,7 +597,6 @@ Lion.prototype.look = function(xTarget, yTarget){
     var m = this.mustaches[i];
     m.rotation.y = 0;
   }
-
 
   for (var i=0; i<this.bodyVertices.length; i++){
      var tvInit = this.bodyInitPositions[i];
@@ -712,5 +709,4 @@ function rule3(v,vmin,vmax,tmin, tmax){
   var dt = tmax-tmin;
   var tv = tmin + (pc*dt);
   return tv;
-
 }
