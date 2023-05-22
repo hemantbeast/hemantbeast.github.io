@@ -21,8 +21,6 @@ http://192.168.5.151:3500/getm3u8/1906/master.m3u8
 http://192.168.5.151:3500/getm3u8/162/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Aaj_Tak.png" group-title="News",Aaj Tak 
 http://192.168.5.151:3500/getm3u8/173/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/BBC_Marathi.png" group-title="News",BBC Marathi 
-http://192.168.5.151:3500/getm3u8/1155/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ABP_News_India.png" group-title="News",ABP News India 
 http://192.168.5.151:3500/getm3u8/177/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ten2_HD.png" group-title="Sports",Sony Ten 2 HD 
@@ -137,6 +135,8 @@ http://192.168.5.151:3500/getm3u8/202/master.m3u8
 http://192.168.5.151:3500/getm3u8/532/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Tamil_HD.png" group-title="Entertainment",Colors Tamil HD 
 http://192.168.5.151:3500/getm3u8/429/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_TV_HD.png" group-title="Entertainment",Sun TV HD 
+http://192.168.5.151:3500/getm3u8/896/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Madhya_Pradesh.png" group-title="Entertainment",DD Madhya Pradesh 
 http://192.168.5.151:3500/getm3u8/536/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Rajasthan_Jaipur.png" group-title="Entertainment",DD Rajasthan (Jaipur) 
@@ -161,12 +161,18 @@ http://192.168.5.151:3500/getm3u8/1074/master.m3u8
 http://192.168.5.151:3500/getm3u8/487/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Bhojpuri_Cinema.png" group-title="Movies",Bhojpuri Cinema 
 http://192.168.5.151:3500/getm3u8/486/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/KTV_HD.png" group-title="Movies",KTV HD 
+http://192.168.5.151:3500/getm3u8/894/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Enterr_10.png" group-title="Entertainment",Enterr 10 
 http://192.168.5.151:3500/getm3u8/485/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Action.png" group-title="Movies",Zee Action 
 http://192.168.5.151:3500/getm3u8/488/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Movies.png" group-title="Movies",Udaya Movies 
+http://192.168.5.151:3500/getm3u8/678/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Cinemalu.png" group-title="Movies",Zee Cinemalu 
 http://192.168.5.151:3500/getm3u8/413/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Movies_HD.png" group-title="Movies",Gemini Movies HD 
+http://192.168.5.151:3500/getm3u8/899/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Anmol_Cinema.png" group-title="Movies",Zee Anmol Cinema 
 http://192.168.5.151:3500/getm3u8/415/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/IBN_7.png" group-title="News",News 18 India 
@@ -231,6 +237,8 @@ http://192.168.5.151:3500/getm3u8/523/master.m3u8
 http://192.168.5.151:3500/getm3u8/524/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Six_SD.png" group-title="Sports",Sony Ten 5 
 http://192.168.5.151:3500/getm3u8/525/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Music_HD.png" group-title="Music",Sun Music HD 
+http://192.168.5.151:3500/getm3u8/895/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zing.png" group-title="Music",Zing 
 http://192.168.5.151:3500/getm3u8/585/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/9XM.png" group-title="Music",9XM 
@@ -241,8 +249,12 @@ http://192.168.5.151:3500/getm3u8/591/master.m3u8
 http://192.168.5.151:3500/getm3u8/183/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zoom.png" group-title="Music",ZOOM 
 http://192.168.5.151:3500/getm3u8/592/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Music_HD.png" group-title="Music",Gemini Music HD 
+http://192.168.5.151:3500/getm3u8/898/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/MTV.png" group-title="Music",MTV 
 http://192.168.5.151:3500/getm3u8/248/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Music.png" group-title="Music",Udaya Music 
+http://192.168.5.151:3500/getm3u8/744/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/9X_Jalwa.png" group-title="Music",9X Jalwa 
 http://192.168.5.151:3500/getm3u8/440/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Public_Music.png" group-title="Music",Public Music 
@@ -451,6 +463,12 @@ http://192.168.5.151:3500/getm3u8/847/master.m3u8
 http://192.168.5.151:3500/getm3u8/785/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Vendhar_TV.png" group-title="Entertainment",Vendhar TV 
 http://192.168.5.151:3500/getm3u8/857/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_TV_HD.png" group-title="Entertainment",Gemini TV HD 
+http://192.168.5.151:3500/getm3u8/897/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_HD.png" group-title="Entertainment",Surya HD 
+http://192.168.5.151:3500/getm3u8/900/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_HD.png" group-title="Entertainment",Udaya HD 
+http://192.168.5.151:3500/getm3u8/901/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sanjha_TV.png" group-title="Entertainment",Sanjha TV 
 http://192.168.5.151:3500/getm3u8/904/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Punjab_Today.png" group-title="Entertainment",Live Punjabi TV 
@@ -499,10 +517,14 @@ http://192.168.5.151:3500/getm3u8/701/master.m3u8
 http://192.168.5.151:3500/getm3u8/702/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Polimer_TV.png" group-title="Entertainment",Polimer TV 
 http://192.168.5.151:3500/getm3u8/705/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Comedy.png" group-title="Entertainment",Gemini Comedy 
+http://192.168.5.151:3500/getm3u8/729/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_TV.png" group-title="Entertainment",Raj TV 
 http://192.168.5.151:3500/getm3u8/707/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Makkal_TV.png" group-title="Entertainment",Makkal TV 
 http://192.168.5.151:3500/getm3u8/708/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Adithya_TV.png" group-title="Entertainment",Adithya TV 
+http://192.168.5.151:3500/getm3u8/709/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kairali_TV.png" group-title="Entertainment",Kairali TV 
 http://192.168.5.151:3500/getm3u8/710/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Captain_tv.png" group-title="Entertainment",Captain tv 
@@ -537,6 +559,8 @@ http://192.168.5.151:3500/getm3u8/728/master.m3u8
 http://192.168.5.151:3500/getm3u8/730/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kairali_WE_TV.png" group-title="Entertainment",Kairali WE TV 
 http://192.168.5.151:3500/getm3u8/731/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Comedy.png" group-title="Entertainment",Udaya Comedy 
+http://192.168.5.151:3500/getm3u8/733/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Vissa_TV.png" group-title="Entertainment",Vissa TV 
 http://192.168.5.151:3500/getm3u8/734/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Maiboli.png" group-title="Entertainment",Maiboli 
@@ -561,6 +585,10 @@ http://192.168.5.151:3500/getm3u8/417/master.m3u8
 http://192.168.5.151:3500/getm3u8/685/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Cinema.png" group-title="Movies",ETV Cinema 
 http://192.168.5.151:3500/getm3u8/252/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Life.png" group-title="Movies",Gemini Life 
+http://192.168.5.151:3500/getm3u8/684/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Life.png" group-title="Movies",Sun Life 
+http://192.168.5.151:3500/getm3u8/682/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Fakt_Marathi.png" group-title="Movies",Fakt Marathi 
 http://192.168.5.151:3500/getm3u8/738/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Pitaara.png" group-title="Movies",Pitaara 
@@ -617,6 +645,8 @@ http://192.168.5.151:3500/getm3u8/616/master.m3u8
 http://192.168.5.151:3500/getm3u8/531/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Bangla_News.png" group-title="News",News18 Bangla News 
 http://192.168.5.151:3500/getm3u8/717/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_News.png" group-title="News",Sun News 
+http://192.168.5.151:3500/getm3u8/676/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/News_State_UK_UP.png" group-title="News",News State UK UP 
 http://192.168.5.151:3500/getm3u8/792/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/News_18_Assam.png" group-title="News",News 18 Assam 
@@ -673,6 +703,8 @@ http://192.168.5.151:3500/getm3u8/735/master.m3u8
 http://192.168.5.151:3500/getm3u8/441/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Only_Music.png" group-title="Music",Only Music 
 http://192.168.5.151:3500/getm3u8/903/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Music.png" group-title="Music",Surya Music 
+http://192.168.5.151:3500/getm3u8/747/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/PBN_Music.png" group-title="Music",PBN Music 
 http://192.168.5.151:3500/getm3u8/905/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_Music_Telugu.png" group-title="Music",Raj Music Telugu 
@@ -733,8 +765,6 @@ http://192.168.5.151:3500/getm3u8/826/master.m3u8
 http://192.168.5.151:3500/getm3u8/910/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_24_Kalak.png" group-title="News",Zee 24 Kalak 
 http://192.168.5.151:3500/getm3u8/929/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/BBC_World_News.png" group-title="News",BBC World News 
-http://192.168.5.151:3500/getm3u8/142/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Telangana.png" group-title="News",ETV Telangana 
 http://192.168.5.151:3500/getm3u8/630/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kalinga_TV.png" group-title="News",Kalinga TV 
@@ -749,8 +779,14 @@ http://192.168.5.151:3500/getm3u8/965/master.m3u8
 http://192.168.5.151:3500/getm3u8/800/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/HM_TV.png" group-title="News",HM TV 
 http://192.168.5.151:3500/getm3u8/665/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Chutti_TV.png" group-title="Kids",Chutti TV 
+http://192.168.5.151:3500/getm3u8/557/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Chintu_TV.png" group-title="Kids",Chintu TV 
+http://192.168.5.151:3500/getm3u8/555/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/sonic_Tamil.png" group-title="Kids",sonic Tamil 
 http://192.168.5.151:3500/getm3u8/290/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kushi_TV.png" group-title="Kids",Kushi TV 
+http://192.168.5.151:3500/getm3u8/558/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Cartoon_Network_Telugu.png" group-title="Kids",Cartoon Network Telugu 
 http://192.168.5.151:3500/getm3u8/166/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Kids_Tamil.png" group-title="Kids",Discovery Kids Tamil 
@@ -771,6 +807,10 @@ http://192.168.5.151:3500/getm3u8/541/master.m3u8
 http://192.168.5.151:3500/getm3u8/852/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Boogle_Bollywood.png" group-title="Music",Boogle Bollywood 
 http://192.168.5.151:3500/getm3u8/962/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Vaanavil_TV.png" group-title="Entertainment",Vaanavil TV 
+http://192.168.5.151:3500/getm3u8/971/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Power_TV.png" group-title="News",Power TV 
+http://192.168.5.151:3500/getm3u8/2743/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Wellness.png" group-title="Lifestyle",testa 
 http://192.168.5.151:3500/getm3u8/795/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Propex_TV.png" group-title="Lifestyle",Propex TV 
@@ -877,8 +917,6 @@ http://192.168.5.151:3500/getm3u8/807/master.m3u8
 http://192.168.5.151:3500/getm3u8/768/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_News_Kannada.png" group-title="News",Raj News Kannada 
 http://192.168.5.151:3500/getm3u8/651/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ashtavinayak.png" group-title="JioDarshan",Ashtavinayak 
-http://192.168.5.151:3500/getm3u8/1524/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Urdu.png" group-title="News",News18 JKLH 
 http://192.168.5.151:3500/getm3u8/694/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/India_News_Haryana.png" group-title="News",India News Haryana 
@@ -889,8 +927,6 @@ http://192.168.5.151:3500/getm3u8/513/master.m3u8
 http://192.168.5.151:3500/getm3u8/643/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/MBC.png" group-title="News",MBC 
 http://192.168.5.151:3500/getm3u8/631/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sahara_Samay_Bihar.png" group-title="News",Sahara Samay Bihar 
-http://192.168.5.151:3500/getm3u8/509/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_SANGAM.png" group-title="News",Zee Hindustan 
 http://192.168.5.151:3500/getm3u8/652/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/TEST14_HD.png" group-title="Kids",TEST14 HD 
@@ -939,8 +975,6 @@ http://192.168.5.151:3500/getm3u8/1170/master.m3u8
 http://192.168.5.151:3500/getm3u8/791/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Live_Today.png" group-title="News",Live Today 
 http://192.168.5.151:3500/getm3u8/771/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sahara_Samay_Rastriya.png" group-title="News",Sahara Samay Rastriya 
-http://192.168.5.151:3500/getm3u8/506/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Mh_One_News.png" group-title="News",Mh One News 
 http://192.168.5.151:3500/getm3u8/511/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Janta_TV.png" group-title="News",Janta TV 
@@ -1053,14 +1087,14 @@ http://192.168.5.151:3500/getm3u8/873/master.m3u8
 http://192.168.5.151:3500/getm3u8/548/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/CN_HD_Tamil.png" group-title="Kids",CN HD+ Tamil 
 http://192.168.5.151:3500/getm3u8/1081/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kochu_TV.png" group-title="Kids",Kochu TV 
+http://192.168.5.151:3500/getm3u8/556/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/CN_HD_Telugu.png" group-title="Kids",CN HD+ Telugu 
 http://192.168.5.151:3500/getm3u8/1080/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_bharati.png" group-title="Infotainment",DD bharati 
 http://192.168.5.151:3500/getm3u8/580/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Care_World.png" group-title="Infotainment",Care World 
 http://192.168.5.151:3500/getm3u8/582/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Insight.png" group-title="Infotainment",Insight HD 
-http://192.168.5.151:3500/getm3u8/888/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Prime_Asia_Tv.png" group-title="Infotainment",Prime Asia HD 
 http://192.168.5.151:3500/getm3u8/1162/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Malayalam.png" group-title="Kids",Nick Malayalam 
@@ -1079,6 +1113,8 @@ http://192.168.5.151:3500/getm3u8/1346/master.m3u8
 http://192.168.5.151:3500/getm3u8/1227/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Top_Tutor.png" group-title="Educational",Top Tutor 
 http://192.168.5.151:3500/getm3u8/1337/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images//" group-title="Educational",ALI TV 
+http://192.168.5.151:3500/getm3u8/1355/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Gyan_Brikshya.png" group-title="Educational",Gyan Brikshya 
 http://192.168.5.151:3500/getm3u8/1428/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Manipur_Educational_Channel.png" group-title="Educational",Lairik 
@@ -1093,16 +1129,12 @@ http://192.168.5.151:3500/getm3u8/1435/master.m3u8
 http://192.168.5.151:3500/getm3u8/1436/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Utkarsh_Higher.png" group-title="Educational",Utkarsh Higher 
 http://192.168.5.151:3500/getm3u8/1437/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Meluha.png" group-title="Educational",Meluha 
-http://192.168.5.151:3500/getm3u8/1439/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Home_Learning_Gujarat.png" group-title="Educational",Home Learning Gujarat Standard-9 
 http://192.168.5.151:3500/getm3u8/1460/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/KITE_Victers.png" group-title="Educational",KITE VICTERS 
 http://192.168.5.151:3500/getm3u8/1429/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Parmarth_TV.png" group-title="Devotional",Parmarth TV 
 http://192.168.5.151:3500/getm3u8/1449/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Lionsgate_Play.png" group-title="Entertainment",Lionsgate Play 
-http://192.168.5.151:3500/getm3u8/2327/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Cricket_2_HD.png" group-title="Sports",Jio Cricket 2 HD 
 http://192.168.5.151:3500/getm3u8/1161/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Esports_HD.png" group-title="Sports",JioGames HD 
@@ -1163,8 +1195,6 @@ http://192.168.5.151:3500/getm3u8/1553/master.m3u8
 http://192.168.5.151:3500/getm3u8/1554/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Express_TV.png" group-title="Infotainment",Express TV 
 http://192.168.5.151:3500/getm3u8/1557/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Express_TV_Shikshana.png" group-title="Educational",Express Shikshana 
-http://192.168.5.151:3500/getm3u8/1558/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jigyasa_TV.png" group-title="Devotional",Jigyasa TV 
 http://192.168.5.151:3500/getm3u8/1559/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/35mm.png" group-title="Devotional",35mm 
@@ -1193,14 +1223,6 @@ http://192.168.5.151:3500/getm3u8/1592/master.m3u8
 http://192.168.5.151:3500/getm3u8/1593/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Samachar_24.png" group-title="News",Samachar 24 
 http://192.168.5.151:3500/getm3u8/1594/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/FTV_HD.png" group-title="Lifestyle",FTV HD 
-http://192.168.5.151:3500/getm3u8/1598/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/InWild_HD.png" group-title="Infotainment",InWild HD 
-http://192.168.5.151:3500/getm3u8/1599/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZooMoo_HD.png" group-title="Kids",ZooMoo HD 
-http://192.168.5.151:3500/getm3u8/1601/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Smithsonian_HD.png" group-title="Infotainment",Smithsonian HD 
-http://192.168.5.151:3500/getm3u8/1602/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Bangla_Bhakti.png" group-title="Devotional",Bangla Bhakti 
 http://192.168.5.151:3500/getm3u8/1605/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ken_Kerelam_TV.png" group-title="Infotainment",Ken TV Keralam 
@@ -1259,8 +1281,6 @@ http://192.168.5.151:3500/getm3u8/1706/master.m3u8
 http://192.168.5.151:3500/getm3u8/1708/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/24hrs_TV.png" group-title="News",24Hrs TV 
 http://192.168.5.151:3500/getm3u8/1725/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/BBC_Gujarati.png" group-title="News",BBC News Gujarati 
-http://192.168.5.151:3500/getm3u8/1726/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Anaadi_TV.png" group-title="News",Anaadi TV 
 http://192.168.5.151:3500/getm3u8/1728/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Live_7.png" group-title="News",Live 7 
@@ -1277,8 +1297,6 @@ http://192.168.5.151:3500/getm3u8/1734/master.m3u8
 http://192.168.5.151:3500/getm3u8/1735/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Luxe_Tv_HD.png" group-title="Lifestyle",LUXE TV HD 
 http://192.168.5.151:3500/getm3u8/1736/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Mezzo_HD.png" group-title="Music",Mezzo Live HD 
-http://192.168.5.151:3500/getm3u8/1737/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Hosanna_TV.png" group-title="Devotional",Hosanna TV 
 http://192.168.5.151:3500/getm3u8/1738/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/V24_TV.png" group-title="Entertainment",JKAC News 
@@ -1313,8 +1331,6 @@ http://192.168.5.151:3500/getm3u8/1766/master.m3u8
 http://192.168.5.151:3500/getm3u8/1768/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/LWA.png" group-title="Devotional",LWA 
 http://192.168.5.151:3500/getm3u8/1769/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Tripura.png" group-title="Educational",Vande Tripura 
-http://192.168.5.151:3500/getm3u8/1770/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Express_News.png" group-title="News",Express News 
 http://192.168.5.151:3500/getm3u8/1771/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_4_HD_Tamil.png" group-title="Sports",Sony Ten 4 HD Tamil 
@@ -1387,8 +1403,6 @@ http://192.168.5.151:3500/getm3u8/1061/master.m3u8
 http://192.168.5.151:3500/getm3u8/1062/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/TEST7_HD.png" group-title="News",TEST7 HD 
 http://192.168.5.151:3500/getm3u8/1063/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/TEST8_HD.png" group-title="Shopping",TEST8 HD 
-http://192.168.5.151:3500/getm3u8/1148/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ABP_Ganga.png" group-title="News",ABP Ganga 
 http://192.168.5.151:3500/getm3u8/1205/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kalaignar_TV.png" group-title="Entertainment",Kalaignar TV 
@@ -1419,8 +1433,6 @@ http://192.168.5.151:3500/getm3u8/1225/master.m3u8
 http://192.168.5.151:3500/getm3u8/1226/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ambabai_Temple.png" group-title="JioDarshan",Ambabai Temple-Kolhapur 
 http://192.168.5.151:3500/getm3u8/1228/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/TEST9_HD.png" group-title="Infotainment",TEST9 HD 
-http://192.168.5.151:3500/getm3u8/1229/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/VR_360.png" group-title="JioDarshan",PTC VR 
 http://192.168.5.151:3500/getm3u8/1230/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Football_Hindi_HD.png" group-title="Sports",Jio Football Hindi HD 
@@ -1475,8 +1487,6 @@ http://192.168.5.151:3500/getm3u8/1265/master.m3u8
 http://192.168.5.151:3500/getm3u8/1266/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/iLove.png" group-title="Music",iLove 
 http://192.168.5.151:3500/getm3u8/1267/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ABZY_Dhakad.png" group-title="Movies",ABZY Dhakad 
-http://192.168.5.151:3500/getm3u8/1268/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ABZY_Cool.png" group-title="Movies",ABZY Cool 
 http://192.168.5.151:3500/getm3u8/1269/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ABZY_Movies.png" group-title="Movies",ABZY Movies 
@@ -1523,8 +1533,6 @@ http://192.168.5.151:3500/getm3u8/1294/master.m3u8
 http://192.168.5.151:3500/getm3u8/1295/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/B4U_Bhojpuri.png" group-title="Movies",B4U Bhojpuri 
 http://192.168.5.151:3500/getm3u8/1296/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/TV_Bangla.png" group-title="News",TV Bangla 
-http://192.168.5.151:3500/getm3u8/1297/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Manjari_TV.png" group-title="Entertainment",Manjari TV 
 http://192.168.5.151:3500/getm3u8/1299/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/HHDL.png" group-title="Devotional",HHDL 
@@ -1551,6 +1559,8 @@ http://192.168.5.151:3500/getm3u8/1371/master.m3u8
 http://192.168.5.151:3500/getm3u8/1393/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SD.png" group-title="Entertainment",Set SD 
 http://192.168.5.151:3500/getm3u8/1396/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Republic_Bharat.png" group-title="News",Republic Bharat 
+http://192.168.5.151:3500/getm3u8/1403/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/NHK_World_Japan.png" group-title="News",NHK World Japan 
 http://192.168.5.151:3500/getm3u8/1405/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Reporter_TV.png" group-title="News",Reporter TV 
@@ -1587,8 +1597,6 @@ http://192.168.5.151:3500/getm3u8/1426/master.m3u8
 http://192.168.5.151:3500/getm3u8/1427/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_KIDS.png" group-title="Kids",Jio KIDS 
 http://192.168.5.151:3500/getm3u8/1430/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/BBC_Hindi.png" group-title="News",BBC News Hindi 
-http://192.168.5.151:3500/getm3u8/1431/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/TIME8.png" group-title="News",TIME8 
 http://192.168.5.151:3500/getm3u8/1432/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Velukkudi_Discourses.png" group-title="Devotional",Velukkudi Discourses 
@@ -1655,8 +1663,6 @@ http://192.168.5.151:3500/getm3u8/1543/master.m3u8
 http://192.168.5.151:3500/getm3u8/1550/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/News_First.png" group-title="News",News First 
 http://192.168.5.151:3500/getm3u8/1555/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/MY_ZEN_HD.png" group-title="Lifestyle",MY ZEN HD 
-http://192.168.5.151:3500/getm3u8/1596/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/HitsIndia_HD.png" group-title="Entertainment",HITS HD 
 http://192.168.5.151:3500/getm3u8/1603/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Kannada_Cinema.png" group-title="Movies",Colors Kannada Cinema 
@@ -1665,8 +1671,14 @@ http://192.168.5.151:3500/getm3u8/1632/master.m3u8
 http://192.168.5.151:3500/getm3u8/1634/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Bangla_Cinema.png" group-title="Movies",Colors Bangla Cinema 
 http://192.168.5.151:3500/getm3u8/1657/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Comedy.png" group-title="Entertainment",Surya Comedy 
+http://192.168.5.151:3500/getm3u8/1662/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Bangla.png" group-title="Entertainment",Sun Bangla 
+http://192.168.5.151:3500/getm3u8/1669/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/India_News_Gujarat.png" group-title="News",India News Gujarat 
 http://192.168.5.151:3500/getm3u8/1747/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Movies.png" group-title="Movies",Surya Movies 
+http://192.168.5.151:3500/getm3u8/1754/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Cineplex_Bollywood.png" group-title="Movies",Colors Cineplex Bollywood 
 http://192.168.5.151:3500/getm3u8/1763/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_4_Telugu.png" group-title="Sports",Sony Ten 4 Telugu 
@@ -1775,10 +1787,6 @@ http://192.168.5.151:3500/getm3u8/1965/master.m3u8
 http://192.168.5.151:3500/getm3u8/1966/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/PMC_Hindi.png" group-title="Devotional",PMC Hindi 
 http://192.168.5.151:3500/getm3u8/1967/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/PMC_Kannada.png" group-title="Devotional",PMC Kannada 
-http://192.168.5.151:3500/getm3u8/1968/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/PMC_Tamizh.png" group-title="Devotional",PMC Tamizh 
-http://192.168.5.151:3500/getm3u8/1969/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Sports_3_HD.png" group-title="Sports",Jio Sports 3 HD 
 http://192.168.5.151:3500/getm3u8/1970/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Sports_4_HD.png" group-title="Sports",Jio Sports 4 HD 
@@ -1791,8 +1799,6 @@ http://192.168.5.151:3500/getm3u8/1973/master.m3u8
 http://192.168.5.151:3500/getm3u8/1974/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/PMC_Telugu.png" group-title="Devotional",PMC Telugu 
 http://192.168.5.151:3500/getm3u8/1975/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/BBC_Cbeebies.png" group-title="Kids",BBC Cbeebies 
-http://192.168.5.151:3500/getm3u8/1976/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Bangla_HD.png" group-title="Entertainment",Zee Bangla HD 
 http://192.168.5.151:3500/getm3u8/1977/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sports18_1_HD.png" group-title="Sports",Sports18 1 HD 
@@ -1825,7 +1831,7 @@ http://192.168.5.151:3500/getm3u8/2010/master.m3u8
 http://192.168.5.151:3500/getm3u8/2011/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Paramatma.png" group-title="Devotional",Paramatma 
 http://192.168.5.151:3500/getm3u8/2012/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ekamra_S_News.png" group-title="News",Ekamra S News 
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ekamra_S_News.png" group-title="News",Leaking Top Secret 
 http://192.168.5.151:3500/getm3u8/2013/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Rajpath_TV.png" group-title="News",Rajpath TV 
 http://192.168.5.151:3500/getm3u8/2014/master.m3u8
@@ -1883,6 +1889,8 @@ http://192.168.5.151:3500/getm3u8/2045/master.m3u8
 http://192.168.5.151:3500/getm3u8/2063/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Merchant_Records.png" group-title="Music",Merchant Records 
 http://192.168.5.151:3500/getm3u8/2064/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Saregama_Music.png" group-title="Music",Saregama Music 
+http://192.168.5.151:3500/getm3u8/2065/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/The_Q_Comedistaan.png" group-title="Entertainment",The Q Comedistaan 
 http://192.168.5.151:3500/getm3u8/2066/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/The_Q_Marathi.png" group-title="Entertainment",The Q Marathi 
@@ -1935,8 +1943,6 @@ http://192.168.5.151:3500/getm3u8/2228/master.m3u8
 http://192.168.5.151:3500/getm3u8/2229/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Specials_HD.png" group-title="Music",Jio Specials HD 
 http://192.168.5.151:3500/getm3u8/2230/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/No1_Yari_Jam.png" group-title="Music",No 1 Yaari Jam 
-http://192.168.5.151:3500/getm3u8/2232/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/News80.png" group-title="News",News 80 
 http://192.168.5.151:3500/getm3u8/2233/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Desi_Music_Station.png" group-title="Music",Desi Music Station 
@@ -1949,16 +1955,12 @@ http://192.168.5.151:3500/getm3u8/2254/master.m3u8
 http://192.168.5.151:3500/getm3u8/2255/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Thirai.png" group-title="Movies",Zee Thirai 
 http://192.168.5.151:3500/getm3u8/2256/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/POPxo.png" group-title="Infotainment",POPxo 
-http://192.168.5.151:3500/getm3u8/2257/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Animax.png" group-title="Entertainment",Animax 
 http://192.168.5.151:3500/getm3u8/2258/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Divyalok_TV.png" group-title="Devotional",Divyalok TV 
 http://192.168.5.151:3500/getm3u8/2322/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/TTN24.png" group-title="News",TTN24 
 http://192.168.5.151:3500/getm3u8/2323/master.m3u8
-#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Scoowhoop.png" group-title="Entertainment",ScoopWhoop 
-http://192.168.5.151:3500/getm3u8/2324/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Punjabi_Melodies.png" group-title="Music",Punjabi Melodies 
 http://192.168.5.151:3500/getm3u8/2325/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Firstpost.png" group-title="News",Firstpost 
@@ -1981,6 +1983,40 @@ http://192.168.5.151:3500/getm3u8/2355/master.m3u8
 http://192.168.5.151:3500/getm3u8/2388/master.m3u8
 #EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Bharat.png" group-title="News",Vande Bharat News 
 http://192.168.5.151:3500/getm3u8/2423/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Marathi.png" group-title="Entertainment",Sun Marathi 
+http://192.168.5.151:3500/getm3u8/2424/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/E_News79.png" group-title="News",E News 79 
+http://192.168.5.151:3500/getm3u8/2433/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/M_Nadu.png" group-title="News",M Nadu 
+http://192.168.5.151:3500/getm3u8/2434/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Spondon.png" group-title="Entertainment",Spondon 
+http://192.168.5.151:3500/getm3u8/2435/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Prime_9_News.png" group-title="News",Prime 9 News 
+http://192.168.5.151:3500/getm3u8/2436/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Wild_Earth.png" group-title="Infotainment",Wild Earth 
+http://192.168.5.151:3500/getm3u8/2437/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/D_Plus.png" group-title="Educational",D Plus 
+http://192.168.5.151:3500/getm3u8/2438/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Krishi_Pitara.png" group-title="Educational",Krishi Pitara 
+http://192.168.5.151:3500/getm3u8/2439/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Desika_daya.png" group-title="Devotional",Desika daya 
+http://192.168.5.151:3500/getm3u8/2448/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jyothishavartha.png" group-title="Devotional",Jyothishavartha 
+http://192.168.5.151:3500/getm3u8/2686/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/NTBD_Channel.png" group-title="Educational",The Book Channel 
+http://192.168.5.151:3500/getm3u8/2687/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Vistara_News.png" group-title="News",Vistara News 
+http://192.168.5.151:3500/getm3u8/2732/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Popular_TV.png" group-title="News",Popular TV 
+http://192.168.5.151:3500/getm3u8/2734/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Samachar_Plus_Jh_Bihar.png" group-title="News",Samachar Plus Jharkhand Bihar 
+http://192.168.5.151:3500/getm3u8/2735/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Shree_Disha_Bhakti.png" group-title="Devotional",Shree Disha Bhakti 
+http://192.168.5.151:3500/getm3u8/2741/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Kannada_News.png" group-title="News",Zee Kannada News 
+http://192.168.5.151:3500/getm3u8/2742/master.m3u8
+#EXTINF:1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Bhakti_Darpan_International.png" group-title="Devotional",Bhakti Darpan International 
+http://192.168.5.151:3500/getm3u8/2744/master.m3u8
 #EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_HD.png" group-title="Sony Liv",SONY HD
 https://dai.google.com/linear/hls/event/dBdwOiGaQvy0TA1zOsjV6w/master.m3u8
 #EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB_HD.png" group-title="Sony Liv",SONY SAB HD
