@@ -130,7 +130,7 @@ const Hero = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Text Content */}
-          <div className="flex-grow space-y-8 text-center lg:text-left">
+          <div className="flex-grow lg:max-w-[55%] space-y-8 text-center lg:text-left">
             {/* Dynamic Text Display */}
             <ScrollReveal direction="up" delay={0}>
               <div className="mb-8">
@@ -205,7 +205,7 @@ const Hero = () => {
           </div>
 
           {/* Code Snippet Preview */}
-          <div className="relative">
+          <div className="relative flex-shrink-0">
             <CodeSnippet />
           </div>
         </div>

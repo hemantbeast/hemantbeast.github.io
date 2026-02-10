@@ -26,7 +26,7 @@ const About = () => {
     {
       icon: <LuCode className="w-6 h-6" />,
       title: "15+ Production Apps",
-      description: "Enterprise apps serving 50K+ users globally"
+      description: "Enterprise apps serving global markets"
     },
     {
       icon: <LuSmartphone className="w-6 h-6" />,
@@ -78,8 +78,7 @@ const About = () => {
                 </p>
                 <p className="text-lg text-slate-300 leading-relaxed">
                   Currently leading mobile development at <span className="text-indigo-400 font-semibold">Eventtan Pvt. Ltd.</span> 
-                  in Ahmedabad, where I architect cross-platform solutions, manage CI/CD pipelines, 
-                  and drive AI/ML integration initiatives.
+                  where I architect cross-platform solutions and drive AI/ML integration initiatives.
                 </p>
               </div>
 
@@ -143,17 +142,11 @@ const About = () => {
               <h3 className="text-2xl font-semibold text-white mb-6 text-center">
                 Education & Location
               </h3>
-              <div className="grid md:grid-cols-3 gap-8 text-center">
-                <div>
-                  <h4 className="text-lg font-semibold text-indigo-400 mb-2">Experience</h4>
-                  <p className="text-slate-300">
-                    8+ Years
-                  </p>
-                </div>
+              <div className="grid md:grid-cols-2 gap-8 text-center">
                 <div>
                   <h4 className="text-lg font-semibold text-indigo-400 mb-2">Education</h4>
                   <p className="text-slate-300">
-                    Bachelor's in Computer Science & Engineering
+                    Bachelor's in Computer Engineering
                   </p>
                 </div>
                 <div>

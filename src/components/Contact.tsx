@@ -131,7 +131,7 @@ const Contact = () => {
                 {[
                   { label: "Response Time", value: "< 24h" },
                   { label: "Experience", value: "8+ yrs" },
-                  { label: "Projects", value: "50+" },
+                  { label: "Projects", value: "35+" },
                 ].map((stat, index) => (
                   <ScrollReveal key={stat.label} delay={200 + index * 100}>
                     <div className="text-center p-4 bg-slate-800/50 rounded-lg border border-slate-800">
