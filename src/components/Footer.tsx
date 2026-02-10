@@ -26,33 +26,33 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-card border-t border-border/30">
+    <footer className="bg-slate-950 border-t border-slate-800">
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="space-y-6">
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold gradient-text">
+              <h3 className="text-2xl font-bold text-white">
                 Hemant Sharma
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-slate-400 leading-relaxed">
                 Mobile Application Developer specializing in Flutter and cross-platform solutions. 
                 Turning ideas into powerful mobile experiences.
               </p>
             </div>
             <div className="space-y-2">
-              <p className="text-sm text-muted-foreground">
-                <strong className="text-foreground">Location:</strong> Ahmedabad, Gujarat, India
+              <p className="text-sm text-slate-400">
+                <strong className="text-slate-200">Location:</strong> Ahmedabad, Gujarat, India
               </p>
-              <p className="text-sm text-muted-foreground">
-                <strong className="text-foreground">Available for:</strong> Freelance & Full-time
+              <p className="text-sm text-slate-400">
+                <strong className="text-slate-200">Available for:</strong> Freelance & Full-time
               </p>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-6">
-            <h4 className="text-lg font-semibold text-foreground">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-white">Quick Links</h4>
             <div className="space-y-3">
               {quickLinks.map((link) => (
                 <a
@@ -62,7 +62,7 @@ const Footer = () => {
                     e.preventDefault();
                     scrollToSection(link.href);
                   }}
-                  className="block text-muted-foreground hover:text-primary transition-colors"
+                  className="block text-slate-400 hover:text-indigo-400 transition-colors"
                 >
                   {link.name}
                 </a>
@@ -72,44 +72,44 @@ const Footer = () => {
 
           {/* Services */}
           <div className="space-y-6">
-            <h4 className="text-lg font-semibold text-foreground">Services</h4>
+            <h4 className="text-lg font-semibold text-white">Services</h4>
             <div className="space-y-3">
-              <p className="text-muted-foreground">Flutter Development</p>
-              <p className="text-muted-foreground">Cross-platform Apps</p>
-              <p className="text-muted-foreground">UI/UX Design</p>
-              <p className="text-muted-foreground">API Integration</p>
-              <p className="text-muted-foreground">App Store Deployment</p>
+              <p className="text-slate-400">Flutter Development</p>
+              <p className="text-slate-400">Cross-platform Apps</p>
+              <p className="text-slate-400">UI/UX Design</p>
+              <p className="text-slate-400">API Integration</p>
+              <p className="text-slate-400">App Store Deployment</p>
             </div>
           </div>
 
           {/* Contact & Social */}
           <div className="space-y-6">
-            <h4 className="text-lg font-semibold text-foreground">Connect</h4>
+            <h4 className="text-lg font-semibold text-white">Connect</h4>
             <div className="space-y-4">
               <div className="space-y-2">
-                <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Email:</strong>
+                <p className="text-sm text-slate-400">
+                  <strong className="text-slate-200">Email:</strong>
                 </p>
                 <a 
                   href="mailto:hemantdesharma@gmail.com"
-                  className="text-primary hover:text-primary-glow transition-colors"
+                  className="text-indigo-400 hover:text-indigo-300 transition-colors"
                 >
                   hemantdesharma@gmail.com
                 </a>
               </div>
               <div className="space-y-2">
-                <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Phone:</strong>
+                <p className="text-sm text-slate-400">
+                  <strong className="text-slate-200">Phone:</strong>
                 </p>
                 <a 
                   href="tel:+919662643675"
-                  className="text-primary hover:text-primary-glow transition-colors"
+                  className="text-indigo-400 hover:text-indigo-300 transition-colors"
                 >
                   +91 9662643675
                 </a>
               </div>
               <div className="space-y-3">
-                <p className="text-sm text-foreground font-medium">Follow Me:</p>
+                <p className="text-sm text-slate-200 font-medium">Follow Me:</p>
                 <div className="flex gap-2">
                   {socialLinks.map((link) => (
                     <Button
@@ -117,7 +117,7 @@ const Footer = () => {
                       asChild
                       variant="outline"
                       size="sm"
-                      className="hover-lift"
+                      className="border-slate-700 hover:border-indigo-500 hover:text-indigo-400"
                     >
                       <a 
                         href={link.href} 
@@ -136,14 +136,14 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-border/30 mt-12 pt-8">
+        <div className="border-t border-slate-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2 text-muted-foreground">
+            <div className="text-slate-400">
               © 2025 Hemant Sharma. All rights reserved.
             </div>
-            <div className="flex items-center gap-2 text-muted-foreground">
+            <div className="flex items-center gap-2 text-slate-400">
               <span>Made with</span>
-              <LuHeart className="w-4 h-4 text-destructive fill-current" />
+              <LuHeart className="w-4 h-4 text-red-500 fill-current" />
               <span>in India</span>
             </div>
           </div>

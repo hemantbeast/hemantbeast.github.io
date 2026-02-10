@@ -5,13 +5,14 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import SimpleFooter from "@/components/SimpleFooter.tsx";
+import { ParticlesBackground } from "@/components/ParticlesBackground";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <ParticlesBackground />
       <Navigation />
-      <main>
+      <main className="relative z-10">
         <section id="home">
           <Hero />
         </section>
@@ -20,7 +21,7 @@ const Index = () => {
         <Projects />
         <Contact />
       </main>
-      <SimpleFooter />
+      <Footer />
     </div>
   );
 };

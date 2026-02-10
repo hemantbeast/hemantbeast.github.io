@@ -5,10 +5,24 @@ import { LuMenu, LuX, LuGithub, LuLinkedin, LuMail } from "react-icons/lu";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+      
+      // Update active section based on scroll position
+      const sections = ['home', 'about', 'experience', 'projects', 'contact'];
+      for (const section of sections) {
+        const element = document.querySelector(`#${section}`);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -40,7 +54,7 @@ const Navigation = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? "bg-background/80 backdrop-blur-lg border-b border-border/50" 
+        ? "bg-slate-950/90 backdrop-blur-lg border-b border-slate-800" 
         : "bg-transparent"
     }`}>
       <div className="container mx-auto px-6">
@@ -53,7 +67,7 @@ const Navigation = () => {
                 e.preventDefault();
                 scrollToSection("#home");
               }}
-              className="text-2xl font-bold gradient-text hover:scale-105 transition-transform"
+              className="text-2xl font-bold text-white hover:text-indigo-400 transition-colors"
             >
               HS
             </a>
@@ -69,10 +83,16 @@ const Navigation = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="text-foreground hover:text-primary-glow transition-colors relative group"
+                className={`relative text-sm font-medium transition-colors ${
+                  activeSection === item.href.slice(1)
+                    ? "text-indigo-400"
+                    : "text-slate-400 hover:text-white"
+                }`}
               >
                 {item.name}
-                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+                {activeSection === item.href.slice(1) && (
+                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-indigo-500" />
+                )}
               </a>
             ))}
           </div>
@@ -85,7 +105,7 @@ const Navigation = () => {
                 asChild
                 variant="ghost"
                 size="sm"
-                className="hover-lift"
+                className="text-slate-400 hover:text-indigo-400"
               >
                 <a 
                   href={link.href} 
@@ -98,7 +118,6 @@ const Navigation = () => {
               </Button>
             ))}
             <Button 
-              variant="default" 
               size="sm"
               onClick={() => scrollToSection("#contact")}
               className="ml-2"
@@ -113,7 +132,7 @@ const Navigation = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="hover-lift"
+              className="text-slate-400"
             >
               {isMobileMenuOpen ? <LuX className="w-6 h-6" /> : <LuMenu className="w-6 h-6" />}
             </Button>
@@ -122,7 +141,7 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-lg border-b border-border/50 animate-bounce-in">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-slate-950/95 backdrop-blur-lg border-b border-slate-800">
             <div className="px-6 py-6 space-y-6">
               {/* Mobile Navigation Links */}
               <div className="space-y-4">
@@ -134,7 +153,11 @@ const Navigation = () => {
                       e.preventDefault();
                       scrollToSection(item.href);
                     }}
-                    className="block text-lg text-foreground hover:text-primary-glow transition-colors"
+                    className={`block text-lg ${
+                      activeSection === item.href.slice(1)
+                        ? "text-indigo-400"
+                        : "text-slate-300 hover:text-indigo-400"
+                    }`}
                   >
                     {item.name}
                   </a>
@@ -142,14 +165,14 @@ const Navigation = () => {
               </div>
 
               {/* Mobile Social Links */}
-              <div className="flex justify-center space-x-6 pt-4 border-t border-border/30">
+              <div className="flex justify-center space-x-6 pt-4 border-t border-slate-800">
                 {socialLinks.map((link) => (
                   <Button
                     key={link.label}
                     asChild
                     variant="ghost"
                     size="sm"
-                    className="hover-lift"
+                    className="text-slate-400 hover:text-indigo-400"
                   >
                     <a 
                       href={link.href} 
@@ -166,7 +189,6 @@ const Navigation = () => {
               {/* Mobile CTA */}
               <div className="pt-4">
                 <Button 
-                  variant="hero" 
                   size="lg"
                   className="w-full"
                   onClick={() => scrollToSection("#contact")}

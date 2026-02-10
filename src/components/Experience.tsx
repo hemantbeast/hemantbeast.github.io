@@ -1,101 +1,156 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { LuBriefcase, LuCalendar, LuMapPin } from "react-icons/lu";
+import { LuBriefcase, LuCalendar, LuMapPin, LuTrendingUp } from "react-icons/lu";
+import { ScrollReveal } from "@/components/ScrollReveal";
+import { TiltCard } from "@/components/TiltCard";
 
 const Experience = () => {
   const experiences = [
     {
-      title: "Technical Lead",
+      title: "Technical Lead - Mobile Applications",
       company: "Eventtan Pvt. Ltd.",
       location: "Ahmedabad, Gujarat, India",
-      period: "Jul 2017 - Present",
-      description: "Leading cross-platform mobile development teams and architecting innovative solutions for enterprise clients.",
+      period: "Jan 2023 - Present",
+      description: "Leading mobile development for enterprise clients across USA, UAE, UK, and Jordan markets. Architecting scalable solutions and driving AI/ML integration initiatives.",
       highlights: [
-        "Architected cross-platform apps using Xamarin and Flutter, reducing development time by 30%",
-        "Led and mentored 4 development teams, improving project delivery by 25%",
-        "Enhanced app functionality through RESTful API integration and third-party libraries"
+        "Led mobile development for 15+ enterprise apps serving 50K+ users across USA, UAE, UK, Jordan markets",
+        "Improved app performance by 40% and reduced crashes by 30% through code optimization",
+        "Designed and implemented modular, offline-first architecture adopted across 15+ production apps",
+        "Led a team of 4+ developers and handled sprint planning & delivery with Agile methodologies",
+        "Built RAG-powered chatbot automating 80% of customer support queries",
+        "Implemented YOLO-based ML features achieving 60 FPS real-time inference on mobile devices",
+        "Managed CI/CD pipelines and streamlined app store deployments with GitHub Actions and Azure DevOps",
       ],
-      technologies: ["Flutter", "Xamarin", "REST APIs", "Team Leadership", "CI/CD"]
+      technologies: ["Flutter", "Kotlin", "Android", "iOS", "Riverpod", "MVVM", "Python", "FastAPI", "OpenAI API", "Azure AI Foundry", "CI/CD", "YOLO"],
+      stats: [
+        { label: "Team Size", value: "4+" },
+        { label: "Users Served", value: "50K+" },
+        { label: "Apps Delivered", value: "15+" },
+      ]
+    },
+    {
+      title: "Mobile Application Developer",
+      company: "Eventtan Pvt. Ltd.",
+      location: "Ahmedabad, Gujarat, India",
+      period: "Jul 2017 - Dec 2022",
+      description: "Developed and maintained Android and cross-platform mobile applications for diverse domains including banking, government services, logistics, and utilities.",
+      highlights: [
+        "Developed cross-platform mobile applications using Android SDK, Kotlin, Flutter, and Xamarin.Forms",
+        "Built end-to-end mobile applications for domains including banking, government, logistics, and utilities",
+        "Designed responsive UI screens and implemented business logic using MVVM architecture",
+        "Integrated REST APIs, handled JSON parsing, and implemented secure authentication flows",
+        "Implemented Firebase services including Analytics, Crashlytics, Cloud Messaging, and Authentication",
+        "Worked on real-time features, push notifications, and deep linking for user engagement",
+        "Integrated Google APIs (Maps, Location, Places, AdMob) for location-based applications",
+        "Optimized app performance, fixed critical bugs, and improved stability across releases",
+      ],
+      technologies: ["Android SDK", "Kotlin", "Flutter", "Xamarin.Forms", "Firebase", "REST APIs", "Google APIs", "Git"],
+      stats: [
+        { label: "Experience", value: "5.5 yrs" },
+        { label: "Projects", value: "35+" },
+        { label: "Platforms", value: "3" },
+      ]
     }
   ];
 
   return (
-    <section id="experience" className="py-20 px-6 bg-muted/20">
+    <section id="experience" className="py-20 px-6 bg-slate-900">
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            <span className="gradient-text">Experience</span>
-          </h2>
-          <p className="text-xl text-muted-foreground">
-            Professional journey and key achievements
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <h2 className="section-title mb-4">Experience</h2>
+            <p className="text-lg text-slate-400">
+              Professional journey and key achievements
+            </p>
+          </div>
+        </ScrollReveal>
 
         <div className="space-y-8">
-          {experiences.map((exp, index) => (
-            <Card 
-              key={index}
-              className="hover-lift glow-secondary bg-card/80 backdrop-blur-sm border-secondary/20"
-            >
-              <CardHeader>
-                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-                  <div className="space-y-2">
-                    <CardTitle className="text-2xl text-foreground flex items-center gap-2">
-                      <LuBriefcase className="w-6 h-6 text-secondary" />
-                      {exp.title}
-                    </CardTitle>
-                    <p className="text-xl font-semibold text-secondary">
-                      {exp.company}
-                    </p>
-                    <div className="flex flex-wrap gap-4 text-muted-foreground">
-                      <span className="flex items-center gap-1">
-                        <LuCalendar className="w-4 h-4" />
-                        {exp.period}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <LuMapPin className="w-4 h-4" />
-                        {exp.location}
-                      </span>
+          {experiences.map((exp, expIndex) => (
+            <ScrollReveal key={expIndex} delay={expIndex * 200}>
+              <TiltCard maxRotation={5}>
+                <Card className="card-hover bg-slate-950 border-slate-800 overflow-hidden">
+                  <CardHeader className="border-b border-slate-800/50 pb-6">
+                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+                      <div className="space-y-3">
+                        <div className="flex items-center gap-2">
+                          <div className="p-2 bg-indigo-600 rounded-lg">
+                            <LuBriefcase className="w-5 h-5 text-white" />
+                          </div>
+                          <CardTitle className="text-2xl text-white">
+                            {exp.title}
+                          </CardTitle>
+                        </div>
+                        <p className="text-xl font-semibold text-indigo-400">
+                          {exp.company}
+                        </p>
+                        <div className="flex flex-wrap gap-4 text-slate-300 text-sm">
+                          <span className="flex items-center gap-1">
+                            <LuCalendar className="w-4 h-4" />
+                            {exp.period}
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <LuMapPin className="w-4 h-4" />
+                            {exp.location}
+                          </span>
+                        </div>
+                      </div>
+                      
+                      {/* Stats */}
+                      {exp.stats && (
+                        <div className="flex gap-6 lg:gap-8">
+                          {exp.stats.map((stat) => (
+                            <div key={`${expIndex}-${stat.label}`} className="text-center">
+                              <div className="text-2xl font-bold text-indigo-400">{stat.value}</div>
+                              <div className="text-xs text-slate-400 uppercase tracking-wider">{stat.label}</div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
                     </div>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  {exp.description}
-                </p>
-                
-                <div className="space-y-4">
-                  <h4 className="font-semibold text-foreground">Key Achievements:</h4>
-                  <ul className="space-y-2">
-                    {exp.highlights.map((highlight, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-muted-foreground">
-                        <div className="w-2 h-2 bg-gradient-primary rounded-full mt-2 flex-shrink-0"></div>
-                        <span>{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  </CardHeader>
+                  
+                  <CardContent className="space-y-8 pt-6">
+                    <p className="text-lg text-slate-300 leading-relaxed">
+                      {exp.description}
+                    </p>
+                    
+                    <div className="space-y-4">
+                      <h4 className="font-semibold text-white flex items-center gap-2">
+                        <LuTrendingUp className="w-5 h-5 text-indigo-400" />
+                        Key Achievements
+                      </h4>
+                      <ul className="space-y-3">
+                        {exp.highlights.map((highlight, idx) => (
+                          <li 
+                            key={idx} 
+                            className="flex items-start gap-3 text-slate-300 group"
+                          >
+                            <div className="w-2 h-2 bg-indigo-500 rounded-full mt-2 flex-shrink-0 group-hover:scale-150 transition-transform duration-300" />
+                            <span className="group-hover:text-white transition-colors duration-300">{highlight}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
-                <div className="space-y-3">
-                  <h4 className="font-semibold text-foreground">Technologies:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {exp.technologies.map((tech, idx) => (
-                      <Badge 
-                        key={tech} 
-                        variant="default"
-                        className="px-3 py-1 hover-lift"
-                        style={{
-                          animationDelay: `${idx * 0.1}s`
-                        }}
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                    <div className="space-y-3">
+                      <h4 className="font-semibold text-white">Technologies</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {exp.technologies.map((tech) => (
+                          <Badge 
+                            key={tech} 
+                            variant="secondary"
+                            className="px-3 py-1 bg-slate-800 text-slate-300 hover:bg-indigo-600 hover:text-white transition-all duration-300 cursor-default"
+                          >
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </TiltCard>
+            </ScrollReveal>
           ))}
         </div>
       </div>

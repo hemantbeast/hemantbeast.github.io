@@ -1,12 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { LuExternalLink, LuSmartphone } from "react-icons/lu";
+import { LuExternalLink, LuSmartphone, LuGithub } from "react-icons/lu";
+import { ScrollReveal } from "@/components/ScrollReveal";
+import { TiltCard } from "@/components/TiltCard";
 import doriImage from "@/assets/dori.webp";
-import fitImage from "@/assets/fitrepublik.png"
-import chemImage from "@/assets/chemexpo.png"
-import speedyImage from "@/assets/speedy.svg"
-import pharmaImage from "@/assets/pharmatech.webp"
+import fitImage from "@/assets/fitrepublik.png";
+import chemImage from "@/assets/chemexpo.png";
+import speedyImage from "@/assets/speedy.svg";
+import pharmaImage from "@/assets/pharmatech.webp";
 
 const Projects = () => {
   const projects = [
@@ -17,7 +19,9 @@ const Projects = () => {
       image: fitImage,
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.republik.customerapp",
       websiteUrl: "https://fitrepublik.com/",
-      technologies: ["Flutter", "Firebase", "Face Detection", "REST API", "UI/UX"]
+      githubUrl: null,
+      technologies: ["Flutter", "Firebase", "Face Detection", "REST API", "UI/UX"],
+      featured: true,
     },
     {
       title: "PharmaTech Expo",
@@ -26,7 +30,9 @@ const Projects = () => {
       image: pharmaImage,
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.dvl.pte",
       websiteUrl: "https://pharmatechexpo.com/",
-      technologies: ["Flutter", "Event Management", "Networking", "Real-time Updates"]
+      githubUrl: null,
+      technologies: ["Flutter", "Event Management", "Networking", "Real-time Updates"],
+      featured: false,
     },
     {
       title: "ChemExpo India",
@@ -35,7 +41,9 @@ const Projects = () => {
       image: chemImage,
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.eventtan.chemindia",
       websiteUrl: "https://chemexpoindia.com/",
-      technologies: ["Flutter", "B2B Networking", "Catalog Management", "Analytics"]
+      githubUrl: null,
+      technologies: ["Flutter", "B2B Networking", "Catalog Management", "Analytics"],
+      featured: false,
     },
     {
       title: "DORI",
@@ -44,7 +52,9 @@ const Projects = () => {
       image: doriImage,
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.dori.doriapp",
       websiteUrl: "#",
-      technologies: ["Xamarin", "Location Services", "Payment Gateway", "Multi-vendor"]
+      githubUrl: null,
+      technologies: ["Xamarin", "Location Services", "Payment Gateway", "Multi-vendor"],
+      featured: false,
     },
     {
       title: "Speedy Services",
@@ -53,112 +63,141 @@ const Projects = () => {
       image: speedyImage,
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.speedyservices.speedyapp",
       websiteUrl: "#",
-      technologies: ["Xamarin", "GPS Tracking", "Route Optimization", "Real-time Updates"]
+      githubUrl: null,
+      technologies: ["Xamarin", "GPS Tracking", "Route Optimization", "Real-time Updates"],
+      featured: false,
     }
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 bg-background">
+    <section id="projects" className="py-20 px-6 bg-slate-950">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            <span className="gradient-text">Featured Projects</span>
-          </h2>
-          <p className="text-xl text-muted-foreground">
-            Mobile applications that make a difference
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <h2 className="section-title mb-4">Featured Projects</h2>
+            <p className="text-lg text-slate-300">
+              Enterprise and consumer apps across events, fitness, AI-driven platforms, and more
+            </p>
+          </div>
+        </ScrollReveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card 
-              key={project.title}
-              className="hover-lift glow-accent bg-card/80 backdrop-blur-sm border-accent/20 group"
-              style={{
-                animationDelay: `${index * 0.1}s`
-              }}
-            >
-              <CardHeader className="space-y-4">
-                <div className="aspect-video bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
-                  {/*<LuSmartphone className="w-12 h-12 text-primary-foreground" />*/}
-                  <img
-                      src={project.image}
-                      alt={project.title}
-                      className="relative justify-center"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <CardTitle className="text-xl text-foreground group-hover:text-accent transition-colors">
-                    {project.title}
-                  </CardTitle>
-                  <p className="text-sm font-medium text-accent">
-                    {project.company}
-                  </p>
-                </div>
-              </CardHeader>
-              
-              <CardContent className="space-y-6">
-                <p className="text-muted-foreground leading-relaxed min-h-32">
-                  {project.description}
-                </p>
-
-                <div className="space-y-3">
-                  <div className="flex flex-wrap gap-1">
-                    {project.technologies.map((tech, idx) => (
-                      <Badge 
-                        key={tech} 
-                        variant="outline" 
-                        className="text-xs px-2 py-1 border-accent/30 text-accent"
-                      >
-                        {tech}
+            <ScrollReveal key={project.title} delay={index * 100}>
+              <TiltCard maxRotation={8}>
+                <Card className="card-hover bg-slate-900 border-slate-800 group h-full flex flex-col relative overflow-hidden">
+                  {project.featured && (
+                    <div className="absolute top-4 right-4 z-10">
+                      <Badge className="bg-indigo-600 hover:bg-indigo-500 text-white">
+                        Featured
                       </Badge>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="flex gap-2 pt-2">
-                  <Button 
-                    asChild 
-                    variant="default" 
-                    size="sm" 
-                    className="flex-1"
-                  >
-                    <a 
-                      href={project.playStoreUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      <LuSmartphone className="w-4 h-4" />
-                      Play Store
-                    </a>
-                  </Button>
-                  {project.websiteUrl !== "#" && (
-                    <Button 
-                      asChild 
-                      variant="outline" 
-                      size="sm"
-                      className="hover-lift"
-                    >
-                      <a 
-                        href={project.websiteUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        <LuExternalLink className="w-4 h-4" />
-                      </a>
-                    </Button>
+                    </div>
                   )}
-                </div>
-              </CardContent>
-            </Card>
+                  
+                  <CardHeader className="space-y-4">
+                    <div className="aspect-video bg-slate-800 rounded-lg overflow-hidden relative">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div className="space-y-2">
+                      <CardTitle className="text-xl text-white group-hover:text-indigo-400 transition-colors duration-300">
+                        {project.title}
+                      </CardTitle>
+                      <p className="text-sm font-medium text-indigo-400">
+                        {project.company}
+                      </p>
+                    </div>
+                  </CardHeader>
+                  
+                  <CardContent className="space-y-6 flex-grow">
+                    <p className="text-slate-300 leading-relaxed">
+                      {project.description}
+                    </p>
+
+                    <div className="flex flex-wrap gap-1">
+                      {project.technologies.map((tech, idx) => (
+                        <Badge 
+                          key={tech} 
+                          variant="outline" 
+                          className="text-xs px-2 py-1 border-slate-700 text-slate-300 hover:border-indigo-500 hover:text-indigo-400 transition-colors duration-200"
+                          style={{ animationDelay: `${idx * 50}ms` }}
+                        >
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+
+                    <div className="flex gap-2 pt-2">
+                      <Button 
+                        asChild 
+                        size="sm" 
+                        className="flex-1 transition-all duration-300 hover:scale-105"
+                      >
+                        <a 
+                          href={project.playStoreUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          <LuSmartphone className="w-4 h-4" />
+                          Play Store
+                        </a>
+                      </Button>
+                      
+                      {project.githubUrl && (
+                        <Button 
+                          asChild 
+                          variant="outline" 
+                          size="sm"
+                          className="border-slate-700 hover:border-indigo-500 transition-all duration-300"
+                        >
+                          <a 
+                            href={project.githubUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
+                            <LuGithub className="w-4 h-4" />
+                          </a>
+                        </Button>
+                      )}
+                      
+                      {project.websiteUrl !== "#" && (
+                        <Button 
+                          asChild 
+                          variant="outline" 
+                          size="sm"
+                          className="border-slate-700 hover:border-indigo-500 transition-all duration-300"
+                        >
+                          <a 
+                            href={project.websiteUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
+                            <LuExternalLink className="w-4 h-4" />
+                          </a>
+                        </Button>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+              </TiltCard>
+            </ScrollReveal>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button variant="hero" size="lg" className="text-lg px-8">
-            View All Projects
-          </Button>
-        </div>
+        <ScrollReveal delay={500}>
+          <div className="text-center mt-12">
+            <Button 
+              size="lg" 
+              className="text-lg px-8 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/25"
+            >
+              View All Projects
+            </Button>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

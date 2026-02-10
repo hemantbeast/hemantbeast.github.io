@@ -1,135 +1,171 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { LuCode, LuSmartphone, LuZap, LuUsers } from "react-icons/lu";
+import { ScrollReveal } from "@/components/ScrollReveal";
+import { TiltCard } from "@/components/TiltCard";
+import { SkillsGrid } from "@/components/SkillBar";
 
 const About = () => {
   const skills = [
-    "Flutter", "KMP", "Android", "iOS", "Kotlin", "Node.js",
-    "Firebase", "REST APIs", "CI/CD", "Git", "Python"
+    { name: "Flutter/Dart", level: 95, category: "mobile" },
+    { name: "Kotlin", level: 90, category: "mobile" },
+    { name: "React/TypeScript", level: 85, category: "mobile" },
+    { name: "Node.js", level: 80, category: "backend" },
+    { name: "Firebase", level: 88, category: "backend" },
+    { name: "Git/CI-CD", level: 85, category: "tools" },
+  ];
+
+  const techStack = [
+    "Flutter", "Kotlin", "Android", "iOS", "Dart", "Riverpod",
+    "MVVM", "Clean Architecture", "Firebase", "REST APIs", "CI/CD",
+    "Python", "FastAPI", "OpenAI API", "Azure AI Foundry", "YOLO",
+    "TensorFlow Lite", "RAG Chatbots", "Node.js", "Git"
   ];
 
   const highlights = [
     {
       icon: <LuCode className="w-6 h-6" />,
-      title: "8+ Years Experience",
-      description: "Cross-platform mobile development expertise"
+      title: "15+ Production Apps",
+      description: "Enterprise apps serving 50K+ users globally"
     },
     {
       icon: <LuSmartphone className="w-6 h-6" />,
-      title: "50+ Apps Delivered",
-      description: "Successfully deployed to Play Store & App Store"
+      title: "AI/ML Integration",
+      description: "RAG chatbots, YOLO-based ML, on-device inference"
     },
     {
       icon: <LuZap className="w-6 h-6" />,
       title: "40% Performance Boost",
-      description: "Optimized app performance across projects"
+      description: "Reduced crash rates by 30% across projects"
     },
     {
       icon: <LuUsers className="w-6 h-6" />,
       title: "Team Leadership",
-      description: "Led and mentored 4+ development teams"
+      description: "Led 4+ developers, sprint planning & delivery"
     }
   ];
 
   return (
-    <section id="about" className="py-20 px-6 bg-background relative">
+    <section id="about" className="py-20 px-6 bg-slate-950 relative">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            <span className="gradient-text">About Me</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Passionate mobile developer with a track record of delivering innovative solutions
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <h2 className="section-title mb-4">About Me</h2>
+            <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+              Technical Lead & Mobile Developer with 8+ years of experience building scalable, high-performance applications
+            </p>
+          </div>
+        </ScrollReveal>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-foreground">
-                Technical Lead & Mobile Developer
-              </h3>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Highly accomplished Mobile Application Developer with over 8 years of experience 
-                in architecting and developing robust cross-platform solutions using Flutter and Xamarin. 
-                Proven track record as a technical lead in optimizing application performance and 
-                significantly increasing user engagement.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Currently working at <span className="text-secondary-glow font-semibold">Eventtan Pvt. Ltd. </span>
-                in Ahmedabad, where I lead development teams and drive innovative mobile solutions 
-                for enterprise clients.
-              </p>
-            </div>
+        <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
+          <ScrollReveal direction="left" delay={100}>
+            <div className="space-y-6">
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold text-white">
+                  Technical Lead & Mobile Developer
+                </h3>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  Mobile Development Lead with 8+ years of experience building scalable, high-performance 
+                  mobile applications across Flutter and native Android. I specialize in designing clean 
+                  architectures, improving app performance, and leading teams to deliver reliable, 
+                  production-ready mobile solutions.
+                </p>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  Over the years, I've worked on enterprise and consumer apps across domains like events, 
+                  fitness, AI-driven platforms, and government systems. Notable projects include Fish Finder 
+                  (YOLO-based fish recognition for Florida), Fit + Studio Republik (Dubai fitness platform), 
+                  and the Eventtan event management suite serving 10,000+ concurrent users.
+                </p>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  Currently leading mobile development at <span className="text-indigo-400 font-semibold">Eventtan Pvt. Ltd.</span> 
+                  in Ahmedabad, where I architect cross-platform solutions, manage CI/CD pipelines, 
+                  and drive AI/ML integration initiatives.
+                </p>
+              </div>
 
-            <div className="space-y-4">
-              <h4 className="text-lg font-semibold text-foreground">Core Technologies</h4>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill, index) => (
-                  <Badge 
-                    key={skill} 
-                    variant="default"
-                    className="px-3 py-1 text-sm hover-lift"
-                    style={{
-                      animationDelay: `${index * 0.1}s`
-                    }}
-                  >
-                    {skill}
-                  </Badge>
-                ))}
+              {/* Tech Stack Tags */}
+              <div className="space-y-4">
+                <h4 className="text-lg font-semibold text-white">Core Technologies</h4>
+                <div className="flex flex-wrap gap-2">
+                  {techStack.map((skill, index) => (
+                    <Badge 
+                      key={skill} 
+                      variant="secondary"
+                      className="px-3 py-1 text-sm bg-slate-800 text-slate-300 hover:bg-indigo-600 hover:text-white transition-all duration-300 cursor-default hover:scale-105"
+                      style={{ animationDelay: `${index * 50}ms` }}
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
 
-          <div className="grid grid-cols-2 gap-6">
-            {highlights.map((highlight, index) => (
-              <Card 
-                key={highlight.title} 
-                className="hover-lift glow-primary bg-card/80 backdrop-blur-sm border-primary/20"
-                style={{
-                  animationDelay: `${index * 0.2}s`
-                }}
-              >
-                <CardContent className="p-6 text-center">
-                  <div className="flex justify-center mb-4">
-                    <div className="p-3 bg-gradient-primary rounded-full text-primary-foreground">
-                      {highlight.icon}
+          {/* Skills with Animated Bars */}
+          <ScrollReveal direction="right" delay={200}>
+            <div className="bg-slate-900 border border-slate-800 rounded-lg p-6">
+              <h4 className="text-lg font-semibold text-white mb-6">Proficiency</h4>
+              <SkillsGrid skills={skills} />
+            </div>
+          </ScrollReveal>
+        </div>
+
+        {/* Highlights Grid */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {highlights.map((highlight, index) => (
+            <ScrollReveal key={highlight.title} delay={index * 100}>
+              <TiltCard>
+                <Card className="card-hover bg-slate-900 border-slate-800 h-full">
+                  <CardContent className="p-6 text-center">
+                    <div className="flex justify-center mb-4">
+                      <div className="p-3 bg-indigo-600 rounded-lg text-white transition-transform duration-300 hover:scale-110">
+                        {highlight.icon}
+                      </div>
                     </div>
-                  </div>
-                  <h4 className="font-semibold text-foreground mb-2">
-                    {highlight.title}
-                  </h4>
-                  <p className="text-sm text-muted-foreground">
-                    {highlight.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                    <h4 className="font-semibold text-white mb-2">
+                      {highlight.title}
+                    </h4>
+                    <p className="text-sm text-slate-300">
+                      {highlight.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </TiltCard>
+            </ScrollReveal>
+          ))}
         </div>
 
         {/* Education & Certifications */}
-        <Card className="bg-card/80 backdrop-blur-sm border-primary/20 hover-lift">
-          <CardContent className="p-8">
-            <h3 className="text-2xl font-semibold text-foreground mb-6 text-center">
-              Education & Location
-            </h3>
-            <div className="grid md:grid-cols-2 gap-8 text-center">
-              <div>
-                <h4 className="text-lg font-semibold text-secondary mb-2">Education</h4>
-                <p className="text-muted-foreground">
-                  Bachelor's in Computer Science & Engineering
-                </p>
+        <ScrollReveal delay={300}>
+          <Card className="bg-slate-900 border-slate-800 card-hover">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-semibold text-white mb-6 text-center">
+                Education & Location
+              </h3>
+              <div className="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                  <h4 className="text-lg font-semibold text-indigo-400 mb-2">Experience</h4>
+                  <p className="text-slate-300">
+                    8+ Years
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-indigo-400 mb-2">Education</h4>
+                  <p className="text-slate-300">
+                    Bachelor's in Computer Science & Engineering
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-indigo-400 mb-2">Location</h4>
+                  <p className="text-slate-300">
+                    Ahmedabad, Gujarat, India
+                  </p>
+                </div>
               </div>
-              <div>
-                <h4 className="text-lg font-semibold text-accent mb-2">Location</h4>
-                <p className="text-muted-foreground">
-                  Ahmedabad, Gujarat, India
-                </p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        </ScrollReveal>
       </div>
     </section>
   );
