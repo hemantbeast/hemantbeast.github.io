@@ -3,13 +3,13 @@ import { Badge } from "@/components/ui/badge";
 import { LuCode, LuSmartphone, LuZap, LuUsers } from "react-icons/lu";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { TiltCard } from "@/components/TiltCard";
-import { SkillsGrid } from "@/components/SkillBar";
+import SkillsShowcase from "@/components/SkillsShowcase";
 
 const About = () => {
   const skills = [
     { name: "Flutter/Dart", level: 95, category: "mobile" },
     { name: "Kotlin", level: 90, category: "mobile" },
-    { name: "React/TypeScript", level: 85, category: "mobile" },
+    { name: "AI/ML", level: 85, category: "ai" },
     { name: "Node.js", level: 80, category: "backend" },
     { name: "Firebase", level: 88, category: "backend" },
     { name: "Git/CI-CD", level: 85, category: "tools" },
@@ -97,12 +97,9 @@ const About = () => {
             </div>
           </ScrollReveal>
 
-          {/* Skills with Animated Bars */}
+          {/* Skills with Animated Circular Progress */}
           <ScrollReveal direction="right" delay={200}>
-            <div className="bg-slate-900 border border-slate-800 rounded-lg p-6">
-              <h4 className="text-lg font-semibold text-white mb-6">Proficiency</h4>
-              <SkillsGrid skills={skills} />
-            </div>
+            <SkillsShowcase skills={skills} />
           </ScrollReveal>
         </div>
 
