@@ -100,31 +100,40 @@ const Experience = () => {
                     }`}>
                       <CardContent className="p-6">
                         {/* Header */}
-                        <div className={`mb-4 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
-                          <div className="flex items-center gap-2 mb-2 lg:justify-start">
-                            <div className={`p-2 rounded-lg bg-indigo-500/10 text-indigo-400 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300 ${
-                              index % 2 === 0 ? 'lg:order-2' : ''
-                            }`}>
-                              <LuBriefcase className="w-4 h-4" />
-                            </div>
-                            <span className="text-indigo-400 text-sm font-medium">{exp.period}</span>
+                        <div className={`mb-4 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
+                          <div className={`flex items-center gap-2 mb-2 ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
+                            {index % 2 === 0 ? (
+                              <>
+                                <span className="text-indigo-400 text-sm font-medium">{exp.period}</span>
+                                <div className="p-2 rounded-lg bg-indigo-500/10 text-indigo-400 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                                  <LuBriefcase className="w-4 h-4" />
+                                </div>
+                              </>
+                            ) : (
+                              <>
+                                <div className="p-2 rounded-lg bg-indigo-500/10 text-indigo-400 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                                  <LuBriefcase className="w-4 h-4" />
+                                </div>
+                                <span className="text-indigo-400 text-sm font-medium">{exp.period}</span>
+                              </>
+                            )}
                           </div>
                           
                           <h3 className="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors duration-300">
                             {exp.title}
                           </h3>
-                          <p className="text-slate-400 font-medium flex items-center gap-1 lg:justify-start">
+                          <p className={`text-slate-400 font-medium flex items-center gap-1 ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
                             {exp.company}
                             <LuArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
                           </p>
-                          <p className="text-slate-500 text-sm flex items-center gap-1 mt-1 lg:justify-start">
+                          <p className={`text-slate-500 text-sm flex items-center gap-1 mt-1 ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
                             <LuMapPin className="w-3 h-3" />
                             {exp.location}
                           </p>
                         </div>
 
                         {/* Description */}
-                        <p className="text-slate-300 text-sm leading-relaxed mb-4">
+                        <p className={`text-slate-300 text-sm leading-relaxed mb-4 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
                           {exp.description}
                         </p>
 
@@ -134,12 +143,10 @@ const Experience = () => {
                             {exp.highlights.slice(0, 4).map((highlight, idx) => (
                               <li 
                                 key={idx} 
-                                className="flex items-start gap-2 text-sm text-slate-400 group/item"
+                                className={`flex items-start gap-2 text-sm text-slate-400 group/item ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
                               >
-                                <span className={`w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5 flex-shrink-0 group-hover/item:scale-150 transition-transform duration-300 ${
-                                  index % 2 === 0 ? 'lg:order-2' : ''
-                                }`} />
-                                <span className="group-hover/item:text-slate-200 transition-colors duration-300">
+                                <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5 flex-shrink-0 group-hover/item:scale-150 transition-transform duration-300" />
+                                <span className={`group-hover/item:text-slate-200 transition-colors duration-300 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
                                   {highlight}
                                 </span>
                               </li>

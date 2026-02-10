@@ -129,13 +129,6 @@ const Navigation = () => {
                 </a>
               </Button>
             ))}
-            <Button 
-              size="sm"
-              onClick={() => scrollToSection("#contact")}
-              className="ml-2"
-            >
-              Hire Me
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}

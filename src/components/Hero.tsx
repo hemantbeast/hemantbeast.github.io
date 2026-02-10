@@ -189,7 +189,7 @@ const Hero = () => {
                   onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   <LuMessageCircle className="w-5 h-5" />
-                  Get In Touch
+                  Let's Connect
                 </Button>
                 <Button 
                   variant="outline" 
