@@ -61,14 +61,10 @@ const About = () => {
           <ScrollReveal direction="left" delay={100}>
             <div className="space-y-6">
               <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-white">
-                  Technical Lead & Mobile Developer
-                </h3>
                 <p className="text-lg text-slate-300 leading-relaxed">
-                  Mobile Development Lead with 8+ years of experience building scalable, high-performance 
-                  mobile applications across Flutter and native Android. I specialize in designing clean 
-                  architectures, improving app performance, and leading teams to deliver reliable, 
-                  production-ready mobile solutions.
+                  Building scalable, high-performance mobile applications across Flutter and native Android. 
+                  I specialize in designing clean architectures, improving app performance, and leading teams 
+                  to deliver reliable, production-ready mobile solutions.
                 </p>
                 <p className="text-lg text-slate-300 leading-relaxed">
                   Over the years, I've worked on enterprise and consumer apps across domains like events, 

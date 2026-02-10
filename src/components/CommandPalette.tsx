@@ -31,8 +31,17 @@ const CommandPalette = () => {
       }
     };
 
+    // Listen for custom toggle event from navigation
+    const handleToggle = () => {
+      setOpen((open) => !open);
+    };
+
     document.addEventListener('keydown', down);
-    return () => document.removeEventListener('keydown', down);
+    document.addEventListener('toggleCommandPalette', handleToggle);
+    return () => {
+      document.removeEventListener('keydown', down);
+      document.removeEventListener('toggleCommandPalette', handleToggle);
+    };
   }, []);
 
   const navigateTo = (href: string) => {

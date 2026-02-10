@@ -84,8 +84,8 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <ScrollReveal key={project.title} delay={index * 100}>
-              <TiltCard maxRotation={8}>
-                <Card className="card-hover bg-slate-900 border-slate-800 group h-full flex flex-col relative overflow-hidden">
+              <TiltCard maxRotation={5}>
+                <Card className="card-hover bg-slate-900 border-slate-800 group h-full flex flex-col relative overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-500/30">
                   {project.featured && (
                     <div className="absolute top-4 right-4 z-10">
                       <Badge className="bg-indigo-600 hover:bg-indigo-500 text-white">
@@ -95,13 +95,20 @@ const Projects = () => {
                   )}
                   
                   <CardHeader className="space-y-4">
-                    <div className="aspect-video bg-slate-800 rounded-lg overflow-hidden relative flex items-center justify-center p-4">
+                    <div className="aspect-video bg-slate-800/50 rounded-lg overflow-hidden relative flex items-center justify-center p-4">
                       <img
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300" />
+                      
+                      {/* View Project overlay */}
+                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <span className="px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                          View Project
+                        </span>
+                      </div>
                     </div>
                     <div className="space-y-2">
                       <CardTitle className="text-xl text-white group-hover:text-indigo-400 transition-colors duration-300">

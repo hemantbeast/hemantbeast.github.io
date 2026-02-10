@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { LuMenu, LuX, LuGithub, LuLinkedin, LuMail } from "react-icons/lu";
+import { LuMenu, LuX, LuGithub, LuLinkedin, LuMail, LuCommand } from "react-icons/lu";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -98,7 +98,19 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Social Links & CTA */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="text-slate-400 hover:text-indigo-400 hidden lg:flex items-center gap-2 text-xs"
+              onClick={() => {
+                document.dispatchEvent(new CustomEvent('toggleCommandPalette'));
+              }}
+            >
+              <LuCommand className="w-3 h-3" />
+              <span>⌘K</span>
+            </Button>
+            
             {socialLinks.map((link) => (
               <Button
                 key={link.label}
